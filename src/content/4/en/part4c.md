@@ -483,7 +483,7 @@ notesRouter.post('/', async (request, response, next) => {
 })
 ```
   
-  **NB**: When you create an instance of a Mongoose model using <i>new</i>, calling <i>save()</i> makes Mongoose insert a new document, whereas if you load an existing document from the database and modify it, <i>save()</i> updates the existing document instead.
+  **NB**: When you create an instance of a Mongoose model using <i>new</i>, calling <i>save()</i> makes Mongoose insert a new document. If you load an existing document from the database and modify it, <i>save()</i> updates the existing document instead.
 
 It's worth noting that the <i>user</i> object also changes. The <i>id</i> of the note is stored in the <i>notes</i> field:
 
